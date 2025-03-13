@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../styles/student.css">
+</head>
+<body>
+    <header>
+        <h2>Student Attendance</h2>
+        <button onclick="logout()">Logout</button>
+    </header>
+    <p id="facultyName"></p>
+    <label for="attendanceDate">Select Date:</label>
+    <input type="date" id="attendanceDate">
+    <label for="facultyYear">Select Year:</label>
+    <select id="facultyYear">
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+        <option value="Fourth Year">Fourth Year</option>
+    </select>
+    <label for="semester">Select Semester:</label>
+    <select id="semester"></select>
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody id="subjectList"></tbody>
+    </table>
+    <script src="../scripts/student.js"></script>
+</body>
+</html>

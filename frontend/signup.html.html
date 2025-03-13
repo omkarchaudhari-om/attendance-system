@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="role" required>
+                <option value="student">Student</option>
+                <option value="professor">Professor</option>
+            </select>
+            <select id="faculty" required>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Computer Science Engineering">Computer Science Engineering</option>
+                <option value="Electronics Engineering">Electronics Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+            </select>
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="../scripts/signup.js"></script>
+</body>
+</html>

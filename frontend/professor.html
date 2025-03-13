@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Dashboard</title>
+    <link rel="stylesheet" href="../styles/professor.css">
+</head>
+<body>
+    <header>
+        <h2>Professor Attendance Details</h2>
+        <button onclick="logout()">Logout</button>
+    </header>
+    <label for="facultySelect">Select Faculty:</label>
+    <select id="facultySelect">
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Computer Science Engineering">Computer Science Engineering</option>
+        <option value="Electronics Engineering">Electronics Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+    </select>
+    <label for="attendanceDate">Select Date:</label>
+    <input type="date" id="attendanceDate">
+    <label for="facultyYear">Select Year:</label>
+    <select id="facultyYear">
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+        <option value="Fourth Year">Fourth Year</option>
+    </select>
+    <label for="semester">Select Semester:</label>
+    <select id="semester"></select>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Attendance Status</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceList"></tbody>
+    </table>
+    <script src="../scripts/professor.js"></script>
+</body>
+</html>
